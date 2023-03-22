@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+
+    <style>
+        input{
+            display: block;
+            width: 80%;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        div{
+            width: 80%;
+            margin: 20px auto; 
+            padding: 30px;
+            border-radius: 20px;
+            background-color: aqua;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1 style="text-align: center">Welcome to basic math world</h1>
+    <div>
+        <p>Your Number: <span id="output"></span></p>
+        <label for="Number">Find Odd numbers</label>
+        <input type="text" name="number" id="number" placeholder="Put some Number seperated by comma">
+        <button onclick="findOddNums()" id="btn-find">Find</button>
+    </div>
+    <div>
+        <p>Your Number: <span id="output2"></span></p>
+        <label for="Number2">Find Even numbers</label>
+        <input type="text" name="number" id="number2" placeholder="Put some Number seperated by comma">
+        <button onclick="findEvenNums()" id="btn-find">Find</button>
+    </div>
+    <div>
+        <p>Your Reverse Sentence: <span id="output3"></span></p>
+        <label for="Sentence">Reverse Sentence</label>
+        <input type="text" name="Sentence" id="sentence" placeholder="Put some Number seperated by comma">
+        <button onclick="findReverseSentence()" id="btn-find">Reverse</button>
+    </div>
+    <div>
+        <p>Your Fibonacci series: <span id="output4"></span> </p>
+        <label for="Series">Terms of Number</label>
+        <input type="text" name="Series" id="series" placeholder="Put some Number seperated by comma">
+        <button onclick="findFiboSeries()" id="btn-find">Find</button>
+    </div>
+    <div>
+        <p>Is it Prime Number : <span id="output5"></span> </p>
+        <label for="Prime">Prime number test</label>
+        <input type="text" name="Prime" id="prime" placeholder="Put your number here">
+        <button onclick="findPrimeNum()" id="btn-find">Check</button>
+    </div>
+    <div>
+        <p>Types of Alphabate : <span id="output6"></span> </p>
+        <label for="vowel">Put your letter</label>
+        <input type="text" name="vowel" id="vowel" placeholder="Put your number here">
+        <button onclick="findTypeOfLetter()" id="btn-find">Find</button>
+    </div>
+    <div>
+        <p>Number of Vowels : <span id="output7"></span> </p>
+        <label for="countVowel">Write word or sentence</label>
+        <input type="text" name="countVowel" id="countVowel" placeholder="Put your number here">
+        <button onclick="findNumOfVowel()" id="btn-find">Count</button>
+    </div>
+    <div>
+        <p>Heighest Number : <span id="output8"></span> </p>
+        <label for="heighest">Write the numbers</label>
+        <input type="text" name="heighest" id="heighest" placeholder="Put your numbers here">
+        <button onclick="findHeightNum()" id="btn-find">Find</button>
+    </div>
+    <div>
+        <p>Second heighest Number : <span id="output9"></span> </p>
+        <label for="secheighest">Write the numbers</label>
+        <input type="text" name="secheighest" id="secheighest" placeholder="Put your numbers here">
+        <button onclick="findSecHeightNum()" id="btn-find">Find</button>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+
+</html>
