@@ -125,15 +125,7 @@ const findLeapYear = () => {
     const inputFieldNum = Number(inputFieldString);
     inputField.value = '';
     const outPut = document.getElementById('output10');
-    if(inputFieldNum % 4 === 0){
-        if(inputFieldNum % 100 === 0){
-            if(inputFieldNum % 400 === 0){
-                return outPut.innerHTML = `${inputFieldNum} is a Leap Year`
-            }
-            else{
-                return outPut.innerHTML = `${inputFieldNum} is not a Leap Year`
-            }
-        }
+    if(inputFieldNum % 400 === 0 || (inputFieldNum % 4 === 0 && inputFieldNum % 100 !== 0)){
         return outPut.innerHTML = `${inputFieldNum} is a Leap Year`
     }
     else{
