@@ -118,3 +118,25 @@ const findSecHeightNum = () => {
     const outPut = document.getElementById('output9');
     outPut.innerHTML = `${secheightNum}`;
 }
+
+const findLeapYear = () => {
+    const inputField = document.getElementById('leap-year');
+    const inputFieldString = inputField.value;
+    const inputFieldNum = Number(inputFieldString);
+    inputField.value = '';
+    const outPut = document.getElementById('output10');
+    if(inputFieldNum % 4 === 0){
+        if(inputFieldNum % 100 === 0){
+            if(inputFieldNum % 400 === 0){
+                return outPut.innerHTML = `${inputFieldNum} is a Leap Year`
+            }
+            else{
+                return outPut.innerHTML = `${inputFieldNum} is not a Leap Year`
+            }
+        }
+        return outPut.innerHTML = `${inputFieldNum} is a Leap Year`
+    }
+    else{
+        return outPut.innerHTML = `${inputFieldNum} is not a Leap Year`
+    }
+}

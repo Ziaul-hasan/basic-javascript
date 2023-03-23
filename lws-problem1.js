@@ -45,7 +45,7 @@ const isLeapYear = year => {
         return (`${year} is not a Leap Year !!`)
     }
 }
-console.log(isLeapYear(2024));
+console.log(isLeapYear(1900));
 
 // How you determine the number of vowels in a sentences?
 
